@@ -205,7 +205,7 @@ const Home = () => {
   return (
     <section className="w-full h-screen relative">
       <div className="absolute top-60 left-60 right-0 z-10 flex items-center">
-POPUP
+      {currentStage && <HomeInfo currentStage = {currentStage}/>}
       </div>
       <Canvas
         className={`w-full h-screen bg-transparent ${isRotating ? 'cursor-grabbing' : 'cursor-grab'}`}
