@@ -166,6 +166,7 @@ import Plane from '../Models/Plane';
 
 const Home = () => {
   const [isRotating, setIsRotating] = useState(false);
+  const [currentStage, SetcurrentStage ]= useState(1)
   const [islandSettings, setIslandSettings] = useState({
     scale: [1, 1, 1],
     position: [0, -6.5, -43],
@@ -218,13 +219,16 @@ const Home = () => {
             position={planeSettings.position}
             rotation={[0, 20, 0]}
           />
-          <Sky />
+          <Sky 
+          isRotating ={isRotating}
+          />
           <Island
             position={islandSettings.position}
             scale={islandSettings.scale}
             rotation={islandSettings.rotation}
             isRotating={isRotating}
             setIsRotating={setIsRotating}
+            setCurrentStage={SetcurrentStage}
           />
         </Suspense>
       </Canvas>

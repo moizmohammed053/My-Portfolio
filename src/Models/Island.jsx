@@ -253,6 +253,10 @@ export function Island({
   ...props
 }) {
   const islandRef = useRef();
+  const Island =({isRotating, setIsRotating, setCurrentStage, ...props}) =>{
+
+    const islandRef = useRef();
+  }
   // Get access to the Three.js renderer and viewport
   const { gl, viewport } = useThree();
   const { nodes, materials } = useGLTF(islandScene);
