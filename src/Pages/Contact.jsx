@@ -4,6 +4,7 @@ import { Canvas } from '@react-three/fiber';
 import Fox from '../Models/Fox';
 import Loader  from '../components/Loader';
 import useAlert from '../hooks/useAlert';
+import Alert  from '../components/alert';
 const Contact = () => {
 const formRef = useRef(null);
 const [currentAnimation, setCurrentAnimation ]= useState('idle')
@@ -36,7 +37,7 @@ setTimeout(() => {
   hideAlert();
   setCurrentAnimation('idle')
   setForm ({name: '', email: '',message: '' });
-}, [3000])
+}, [10000])
 
      
     }).catch((error)=>{
@@ -50,13 +51,15 @@ setTimeout(() => {
   const handleSubmit=()=> setCurrentAnimation ('idle');
   return (
     <section className='relative flex lg-flex-row flex-col max-container'>
-      {alert.show && <alert{...alert} />}
+      {alert.show && <Alert {...alert} />}
+      
+      
           <div className='flex-1 min-w-[50%] flex flex-col'>
         <h1 className='head-text'>Get in Touch</h1>
 
         <form
           
-          className='w-full flex flex-col gap-7 mt-14'
+          className="max-w-xl flex flex-col gap-7 mt-5"
           onSubmit={handleSubmit}
         >
           <label className='text-black-500 font-semibold'>
@@ -112,26 +115,29 @@ setTimeout(() => {
           </button>
         </form>
       </div>
-      <div className='lg:w-1/2 w-full lg:h-auto md:h-[500px] h-[350px]'>
+      <div className="lg:w-1/2 w-3/4 lg:h-auto md:h-[500px] h-[350px]"
+      >
       <Canvas 
-      camera={{
-        position:[0, 0, 4],
-        fov: 75,
-        near:0.1,
-        far:1000
-      }}
-       >
-        <directionalLight intensity={2.5} position={[0, 0, 1]}/>
-        <ambientLight intensity={0.5}/>
-        <Suspense fallback={<Loader />}>
-          <Fox 
-          currentAnimation={currentAnimation}
-          position ={[1, 0.35, 0]}
-          rrotation={[12.6, -0.6, 0]}
-          scale={[0.6, 0.6, 0.6]}
-          />
-        </Suspense>
-      </Canvas>
+  camera={{
+    position: [8, 3, 4], // Better vantage point
+    fov: 40,
+    near: 0.1,
+    far: 1000,
+  }}
+>
+  <directionalLight intensity={1.5} position={[3, 3, 3]} />
+  <ambientLight intensity={0.5} />
+  <Suspense fallback={<Loader />}>
+    <Fox 
+      currentAnimation={currentAnimation}
+      position={[2.5, 0.35, 0]}
+      rotation={[12.629, -0.6, 0]}
+      scale={[0.5, 0.5, 0.5]}
+    />
+  </Suspense>
+ {/* Optional for dynamic perspective */}
+</Canvas>
+
       </div>
     </section>
   )

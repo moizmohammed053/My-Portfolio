@@ -5,7 +5,7 @@ const Navbar = () => {
         <NavLink to="/" className="w-10 h-10 rounded-lg bg-white bg-clip-padding items-center justify-center flex font-bold shadow-md">
             <p className="blue-gradient_text">MA</p>
         </NavLink>
-        <nav className=" flex-text-lg gap-80 font-medium">
+        <nav className=" flex text-lg gap-6 font-medium">
         <NavLink to="/About" className={({ isActive }) => isActive ? 'text-blue-500' : 'text-black '}>
           About
         </NavLink>
@@ -19,3 +19,4 @@ const Navbar = () => {
 }
 
 export default Navbar
+
