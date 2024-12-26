@@ -21,7 +21,7 @@ const rendererContent ={
     2:(
         <InfoBox text="I have worked in many languages
         and developed deep knowladge "
-        link="/about"
+        link="/About"
         btnText="Learn more "/> 
     ),
     3:(
@@ -33,7 +33,7 @@ const rendererContent ={
     4:(
         <InfoBox text="I have worked in many languages
         and developed deep knowladge "
-        link="/contact"
+        link="/Contact"
         btnText="Let's Talk "/> 
     ),
 }
