@@ -2,7 +2,9 @@ import React from 'react'
 
 const About = () => {
   return (
-    <div>About</div>
+    <section className='max-container'>
+      <h1>hello</h1>
+    </section>
   )
 }
 
