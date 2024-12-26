@@ -2,11 +2,11 @@ import {NavLink} from "react-router-dom"
 const Navbar = () => {
   return (
     <header className="header">
-        <NavLink to="/" className="w-10 h-10 rounded-lg bg-white items-center justify-center flex font-bold shadow-md">
+        <NavLink to="/" className="w-10 h-10 rounded-lg bg-white bg-clip-padding items-center justify-center flex font-bold shadow-md">
             <p className="blue-gradient_text">MA</p>
         </NavLink>
-        <nav className=" flex-text-lg gap-7 font-medium">
-        <NavLink to="/about" className={({ isActive }) => isActive ? 'text-blue-500' : 'text-black'}>
+        <nav className=" flex-text-lg gap-80 font-medium">
+        <NavLink to="/about" className={({ isActive }) => isActive ? 'text-blue-500' : 'text-black '}>
           About
         </NavLink>
         <NavLink to="/Projects" className={({ isActive }) => isActive ? 'text-blue-500' : 'text-black'}>
