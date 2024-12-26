@@ -1,13 +1,40 @@
 import React, { useRef, useState } from 'react';
+import emailjs from '@emailjs/browser'
 
 const Contact = () => {
   const formRef = useRef (null);
   const [form, setForm]= useState({name: '', email:'', message:''})
   const [isLoading, setisLoading]= useState(false);
-  const handleChange = () => {};
+  const handleChange = (e) => {
+    setForm({...form, [e.target.name]:e.target.value})
+  };
   const handleFocus = () => {};
   const handleBlur = () => {};
-  const handleSubmit =() => {};
+  const handleSubmit =(e) => {
+    e.preventDefault();
+    setisLoading(true);
+
+    emailjs.send(
+      'service_ibo6p22',
+     'template_a3ero3k',
+      
+      {
+        from_name:form.name,
+        to_name:"Moiz",
+        from_email: form.email,
+        to_email: 'moiz05380@gmail.com',
+        message: form.message
+      },
+      'MpuG1uV3Qci60gsdf'
+     
+
+    ).then(()=>{
+      setisLoading(false);
+    }).catch((error)=>{
+      setisLoading(false);
+      console.log(error);
+    })
+  };
 
   return (
     <section className="relative flex lg:flex-row flex-col max-container ">
