@@ -3,12 +3,14 @@ import emailjs  from '@emailjs/browser'
 import { Canvas } from '@react-three/fiber';
 import Fox from '../Models/Fox';
 import Loader  from '../components/Loader';
+import useAlert from '../hooks/useAlert';
 const Contact = () => {
-  const formRef = useRef(null);
-  const [currentAnimation, setCurrentAnimation ]= useState('idle')
-  const [form, setForm] = useState({name: '', email: '',message: '' })
-  const [isLoading, setIsLoading] = useState(false);
-  const handleChange =(e) =>{
+const formRef = useRef(null);
+const [currentAnimation, setCurrentAnimation ]= useState('idle')
+const [form, setForm] = useState({name: '', email: '',message: '' })
+const [isLoading, setIsLoading] = useState(false);
+const {alert, showAlert, hideAlert }=useAlert();
+const handleChange =(e) =>{
     setForm({...form, [e.target.name]: e.target.value})
   };
   const handleFocus =(e) =>{
@@ -29,8 +31,9 @@ setCurrentAnimation('hit');
 'MpuG1uV3Qci60gsdf',
     ).then(()=>{
       setIsLoading(false);
-
+showAlert({show:true, text:'Message sent successfully!', type:'success'})
 setTimeout(() => {
+  hideAlert();
   setCurrentAnimation('idle')
   setForm ({name: '', email: '',message: '' });
 }, [3000])
@@ -39,6 +42,7 @@ setTimeout(() => {
     }).catch((error)=>{
       setIsLoading(false);
       setCurrentAnimation('idle')
+      showAlert({show:true, text:'I didnt receive your message!', type:'danger'})
       console.log(error);
     })
   };
@@ -46,6 +50,7 @@ setTimeout(() => {
   const handleSubmit=()=> setCurrentAnimation ('idle');
   return (
     <section className='relative flex lg-flex-row flex-col max-container'>
+      {alert.show && <alert{...alert} />}
           <div className='flex-1 min-w-[50%] flex flex-col'>
         <h1 className='head-text'>Get in Touch</h1>
 
