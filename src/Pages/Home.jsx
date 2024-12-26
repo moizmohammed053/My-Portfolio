@@ -163,6 +163,7 @@ import Island from '../Models/Island'; // Ensure this matches the file name
 import Sky from '../Models/Sky';
 import Bird from '../Models/Bird';
 import Plane from '../Models/Plane';
+import Homeinfo from '../components/Homeinfo';
 
 const Home = () => {
   const [isRotating, setIsRotating] = useState(false);
@@ -204,8 +205,8 @@ const Home = () => {
 
   return (
     <section className="w-full h-screen relative">
-      <div className="absolute top-60 left-60 right-0 z-10 flex items-center">
-      {currentStage && <HomeInfo currentStage = {currentStage}/>}
+      <div className="absolute top-20 left-60 right-0 z-10 flex items-center">
+      {currentStage &&  < Homeinfo currentStage={currentStage} />}
       </div>
       <Canvas
         className={`w-full h-screen bg-transparent ${isRotating ? 'cursor-grabbing' : 'cursor-grab'}`}
