@@ -10,11 +10,7 @@ const About = () => {
 </h1>
 <div className='mt-5 flex-col gap-3 text-slate-500'>
   <p>
-    Lorem ipsum dolor sit amet consectetur adipisicing 
-    elit. Suscipit at facere id debitis, nemo accusamus 
-    nam commodi cupiditate officiis autem doloribus fuga
-     quo officia dignissimos totam enim beatae molestiae
-      quod!
+  I’m a full-stack developer with a passion for creating dynamic web applications and websites that make a difference. Specializing in developing seamless solutions for businesses of all sizes, I’m dedicated to building exceptional applications that improve lives. Whether it's a small business website or a large-scale application, I’m here to bring your ideas to life. What could you achieve with a developer just a fingertip away?
   </p>
 </div>
 <div className='py-10 flex flex-col' >

@@ -7,10 +7,10 @@ const HomeInfo = ({ currentStage }) => {
     return (
       <h1 className='sm:text-xl sm:leading-snug text-center neo-brutalism-blue py-4 px-8 text-white mx-5'>
         Hi, I'm
-        <span className='font-semibold mx-2 text-white'>Adrian</span>
+        <span className='font-semibold mx-2 text-white'>Moiz Ahmed</span>
         👋
         <br />
-        A Software Engineer from Croatia 🇭🇷
+        A Front-end & Full-Stack Developer
       </h1>
     );
 
@@ -18,9 +18,9 @@ const HomeInfo = ({ currentStage }) => {
     return (
       <div className='info-box'>
         <p className='font-medium sm:text-xl text-center'>
-          Worked with many companies <br /> and picked up many skills along the way
+        Full-stack web developer specializing in dynamic,<br />  user-friendly websites with seamless animations.
         </p>
-
+         
         <Link to='/about' className='neo-brutalism-white neo-btn'>
           Learn more
           <img src={arrow} alt='arrow' className='w-4 h-4 object-contain' />
@@ -33,7 +33,7 @@ const HomeInfo = ({ currentStage }) => {
     return (
       <div className='info-box'>
         <p className='font-medium text-center sm:text-xl'>
-          Led multiple projects to success over the years. <br /> Curious about the impact?
+        Here are some of my projects, showcasing my <br /> work across various programming languages.
         </p>
 
         <Link to='/projects' className='neo-brutalism-white neo-btn'>
