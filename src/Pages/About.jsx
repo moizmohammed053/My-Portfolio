@@ -9,9 +9,12 @@ const About = () => {
       <h1 className='head-text'>Hello, I a'm <span className='blue-gradient_text font-semibold drop-shadow'>Moiz Ahmed</span>
 </h1>
 <div className='mt-5 flex-col gap-3 text-slate-500'>
-  <p>
+  <p className='p-4'>
     I’m a full-stack developer with a passion for creating dynamic web applications and websites that make a difference. Specializing in developing seamless solutions for businesses of all sizes, I’m dedicated to building exceptional applications that improve lives. Whether it's a small business website or a large-scale application, I’m here to bring your ideas to life. What could you achieve with a developer just a fingertip away?
   </p>
+  <button className='btn'>
+        My Resume
+      </button>
 </div>
 <div className='py-10 flex flex-col' >
   <h3 className='subhead-text'>My Skills</h3>
@@ -32,11 +35,7 @@ const About = () => {
   <h3 className='subhead-text'>My Education</h3>
   <div className='mt-5 flex-col gap-3 text-slate-500'>
   <p>
-    Lorem ipsum dolor sit amet consectetur adipisicing 
-    elit. Suscipit at facere id debitis, nemo accusamus 
-    nam commodi cupiditate officiis autem doloribus fuga
-     quo officia dignissimos totam enim beatae molestiae
-      quod!
+  I completed my Computer Applications degree at Osmania University, where I developed a strong foundation in programming, software development, and database management. During my studies, I gained proficiency in languages like Java, C++, and Python, while also learning systems analysis and software engineering principles. Additionally, my education at Conestoga College in the ITBA program equipped me with practical business analysis skills, including requirements gathering, process mapping, and project management, preparing me for real-world IT challenges.
   </p>
 </div>
 <div className='mt-12 flex'>
