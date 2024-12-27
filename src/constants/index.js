@@ -171,43 +171,31 @@ export const projects = [
     {
         iconUrl: pricewise,
         theme: 'btn-back-red',
-        name: 'Amazon Price Tracker',
-        description: 'Developed a web application that tracks and notifies users of price changes for products on Amazon, helping users find the best deals.',
-        link: 'https://github.com/adrianhajdin/pricewise',
+        name: 'MERN Chat-App',
+        description: '"Developed a MERN stack chat app using TypeScript, ReactJS, HTML, and CSS, showcasing real-time communication and responsive design.".',
+        link: 'https://github.com/moizmohammed053/Mern-Chat',
     },
     {
         iconUrl: threads,
         theme: 'btn-back-green',
-        name: 'vanilla js project',
-        description: 'Created a full-stack replica of the popular discussion platform "Threads," enabling users to post and engage in threaded conversations.',
-        link: 'https://github.com/adrianhajdin/threads',
+        name: 'vanilla js project (Wackmole Game)',
+        description: '"Crafted 6 Vanilla JS projects, including a Chrome Extension, Color Flipper, Hex Colors, People Directory, Whack-a-Mole, and Quotes Generator, demonstrating a strong grasp of interactive web functionality and problem-solving with JavaScript.".',
+        link: 'https://github.com/moizmohammed053/vanilla-js-projects-',
     },
     {
         iconUrl: car,
         theme: 'btn-back-blue',
-        name: 'Car Finding App',
-        description: 'Designed and built a mobile app for finding and comparing cars on the market, streamlining the car-buying process.',
-        link: 'https://github.com/adrianhajdin/project_next13_car_showcase',
+        name: 'Dynamic JavaScript',
+        description: '"Developed a dynamic Restaurant project using only JavaScript, focusing on interactive features like menu displays, order processing, and real-time updates.',
+        link: 'https://github.com/moizmohammed053/Dynamic-JS-Projects/tree/main/resturent%20js%20project%202',
     },
     {
         iconUrl: snapgram,
         theme: 'btn-back-pink',
-        name: 'Full Stack Instagram Clone',
-        description: 'Built a complete clone of Instagram, allowing users to share photos and connect with friends in a familiar social media environment.',
-        link: 'https://github.com/adrianhajdin/social_media_app',
+        name: 'MERN resturent web app',
+        description: '"Created a Restaurant web app using the MERN stack (React, Node.js, MongoDB, Express), implementing features like menu management, online ordering, and customer reviews.".',
+        link: '#',
     },
-    {
-        iconUrl: estate,
-        theme: 'btn-back-black',
-        name: 'Real-Estate Application',
-        description: 'Developed a web application for real estate listings, facilitating property searches and connecting buyers with sellers.',
-        link: 'https://github.com/adrianhajdin/projects_realestate',
-    },
-    {
-        iconUrl: summiz,
-        theme: 'btn-back-yellow',
-        name: 'AI Summarizer Application',
-        description: 'App that leverages AI to automatically generate concise & informative summaries from lengthy text content, or blogs.',
-        link: 'https://github.com/adrianhajdin/project_ai_summarizer',
-    }
+    
+    
 ];
