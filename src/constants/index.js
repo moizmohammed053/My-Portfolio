@@ -12,6 +12,7 @@ import {
     linkedin,
     mongodb,
     motion,
+    Figma,
     mui,
     nextjs,
     nodejs,
@@ -26,17 +27,14 @@ import {
     typescript
 } from "../assets/icons";
 
+
 export const skills = [
     {
         imageUrl: css,
         name: "CSS",
         type: "Frontend",
     },
-    {
-        imageUrl: express,
-        name: "Express",
-        type: "Backend",
-    },
+   
     {
         imageUrl: git,
         name: "Git",
@@ -63,8 +61,8 @@ export const skills = [
         type: "Database",
     },
     {
-        imageUrl: motion,
-        name: "Motion",
+        imageUrl: figma,
+        name: "figma",
         type: "Animation",
     },
     {
