@@ -10,7 +10,7 @@ const About = () => {
 </h1>
 <div className='mt-5 flex-col gap-3 text-slate-500'>
   <p>
-  I’m a full-stack developer with a passion for creating dynamic web applications and websites that make a difference. Specializing in developing seamless solutions for businesses of all sizes, I’m dedicated to building exceptional applications that improve lives. Whether it's a small business website or a large-scale application, I’m here to bring your ideas to life. What could you achieve with a developer just a fingertip away?
+    I’m a full-stack developer with a passion for creating dynamic web applications and websites that make a difference. Specializing in developing seamless solutions for businesses of all sizes, I’m dedicated to building exceptional applications that improve lives. Whether it's a small business website or a large-scale application, I’m here to bring your ideas to life. What could you achieve with a developer just a fingertip away?
   </p>
 </div>
 <div className='py-10 flex flex-col' >
@@ -45,11 +45,11 @@ const About = () => {
 
     <VerticalTimelineElement
     key={experiences.company_name}
-    date={experiences.date}
+    date={experiences.date }
     icon={<div className='flex justify-center items-center w-full h-full'>
-      <img src={experiences.icon}
+      {/* <img src={experiences.icon}
        alt={experiences.company_name}
-       className='w-[60%] h-[60%] object-contain' />
+       className='w-[60%] h-[60%] object-contain' /> */}
     </div>}
     iconStyle={{background: experiences.iconBg}}
     contentStyle={{
@@ -58,10 +58,9 @@ const About = () => {
       borderBottomColor: experiences.iconBg,
       boxShadow: 'none',
 
-    }}
-    >
+    }}>
       <div>
-        <h3 className='text-black text-xl font-poppins font-semibold'>
+        <h3 className='text-black text-xl gap-2 font-poppins font-semibold'>
           {experiences.title}
         </h3>
         <p className='text-black-500 font-medium font-base' style={{margin:0}}>

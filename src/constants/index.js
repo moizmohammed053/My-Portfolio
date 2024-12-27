@@ -12,7 +12,6 @@ import {
     linkedin,
     mongodb,
     motion,
-    Figma,
     mui,
     nextjs,
     nodejs,
@@ -26,7 +25,6 @@ import {
     threads,
     typescript
 } from "../assets/icons";
-
 
 export const skills = [
     {
@@ -60,16 +58,7 @@ export const skills = [
         name: "MongoDB",
         type: "Database",
     },
-    {
-        imageUrl: figma,
-        name: "figma",
-        type: "Animation",
-    },
-    {
-        imageUrl: mui,
-        name: "Material-UI",
-        type: "Frontend",
-    },
+    
     {
         imageUrl: nextjs,
         name: "Next.js",
@@ -85,11 +74,7 @@ export const skills = [
         name: "React",
         type: "Frontend",
     },
-    {
-        imageUrl: redux,
-        name: "Redux",
-        type: "State Management",
-    },
+  
     {
         imageUrl: sass,
         name: "Sass",
@@ -109,57 +94,59 @@ export const skills = [
 
 export const experiences = [
     {
-        title: "React.js Developer",
-        company_name: "Starbucks",
+        title: "ITBA",
+        company_name: "Conestoga College",
         icon: starbucks,
         iconBg: "#accbe1",
-        date: "March 2020 - April 2021",
+        date: "Sep 2023 - Dec 2024",
         points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
+            "Gained expertise in business analysis, including requirements gathering, process mapping, and solution design.",
+            "Developed strong technical skills in project management, using tools like JIRA, MS Project, and other business analysis software.",
+            "Learned to effectively communicate with stakeholders and collaborate on cross-functional teams to deliver IT solutions.",
+            "Gained hands-on experience through case studies and practical projects, focusing on real-world IT business challenges.",
         ],
     },
     {
-        title: "React Native Developer",
-        company_name: "Tesla",
+        title: "B.Commerce (Computer Application)",
+        company_name: "Osmania Univeristy",
         icon: tesla,
         iconBg: "#fbc3bc",
-        date: "Jan 2021 - Feb 2022",
+        date: "Jan 2019 - Aug 2022",
         points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
+            "Gained a solid foundation in computer programming, software development, and database management.",
+            "Acquired knowledge of various programming languages such as JavaScript, C and C++ for building applications and solving problems.",
+            "Learned about systems analysis, design methodologies, and software engineering principles to develop efficient software solutions.",
+            "Developed problem-solving and analytical skills through hands-on projects and practical exercises in computer applications and technologies.",
         ],
     },
-    {
-        title: "Web Developer",
-        company_name: "Shopify",
-        icon: shopify,
-        iconBg: "#b7e4c7",
-        date: "Jan 2022 - Jan 2023",
-        points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
-        ],
-    },
-    {
-        title: "Full stack Developer",
-        company_name: "Meta",
-        icon: meta,
-        iconBg: "#a2d2ff",
-        date: "Jan 2023 - Present",
-        points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
-        ],
-    },
+    
+    // {
+    //     title: "Web Developer",
+    //     company_name: "Shopify",
+    //     icon: shopify,
+    //     iconBg: "#b7e4c7",
+    //     date: "Jan 2022 - Jan 2023",
+    //     points: [
+    //         "Developing and maintaining web applications using React.js and other related technologies.",
+    //         "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
+    //         "Implementing responsive design and ensuring cross-browser compatibility.",
+    //         "Participating in code reviews and providing constructive feedback to other developers.",
+    //     ],
+    // },
+    // {
+    //     title: "Full stack Developer",
+    //     company_name: "Meta",
+    //     icon: meta,
+    //     iconBg: "#a2d2ff",
+    //     date: "Jan 2023 - Present",
+    //     points: [
+    //         "Developing and maintaining web applications using React.js and other related technologies.",
+    //         "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
+    //         "Implementing responsive design and ensuring cross-browser compatibility.",
+    //         "Participating in code reviews and providing constructive feedback to other developers.",
+    //     ],
+    // },
+    
 ];
 
 export const socialLinks = [
